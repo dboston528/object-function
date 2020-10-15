@@ -24,14 +24,13 @@
 						let person = {
 							first_name: "DeAndre",
 							last_name: "Boston",
-							age: 31
-						};
+						}
 					</code></pre>
 				</section>
 
 				<section data-auto-animate>
 					<h4 data-id="code-title">How to pass an object into a function</h4>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="6,7-9">
 						let person = {
 							first_name: "DeAndre",
 							last_name: "Boston",
@@ -40,7 +39,6 @@
 						const changeName = function(object, firstName, lastName){
 							object.first_name = firstName
 							object.last_name = lastName
-							object.age = 6
 						}
 						
 					</code></pre>
@@ -48,17 +46,15 @@
 
 				<section data-auto-animate>
 					<h4 data-id="code-title">How to pass an object into a function</h4>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="">
 						let person = {
 							first_name: "DeAndre",
 							last_name: "Boston",
-							age: 31
 						}
 
-						const changeName = function(object, firstName, lastName, age){
+						const changeName = function(object, firstName, lastName){
 							object.first_name = firstName
 							object.last_name = lastName
-							object.age = 6
 						}
 
 						changeName(person, "Jack", "Jack")
@@ -68,20 +64,19 @@
 
 				<section data-auto-animate>
 					<h4 data-id="code-title">How to pass an object into a function</h4>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="11,13, 1-13">
 						let person = {
 							first_name: "DeAndre",
 							last_name: "Boston",
-							age: 31
 						}
 
-						const changeName = function(object, firstName, lastName, age){
+						const changeName = function(object, firstName, lastName){
 							object.first_name = firstName
 							object.last_name = lastName
-							object.age = 6
 						}
 
 						changeName(person, "Jack", "Jack")
+
 						console.log(person)
 					</code></pre>
 				</section>
