@@ -23,8 +23,8 @@
 					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="">
 						let person = {
 							first_name: "DeAndre",
-							last_name: "Boston",
-						}
+							last_name: "Boson",
+						};
 					</code></pre>
 				</section>
 
@@ -33,14 +33,12 @@
 					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="6,7-9">
 						let person = {
 							first_name: "DeAndre",
-							last_name: "Boston",
-						}
-
-						const changeName = function(object, firstName, lastName){
-							object.first_name = firstName
-							object.last_name = lastName
-						}
+							last_name: "Boson",
+						};
 						
+						let getName = (object) => {
+							console.log(`My name is ${object.first_name} ${object.last_name}!`)
+						}
 					</code></pre>
 				</section>
 
@@ -49,36 +47,17 @@
 					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="">
 						let person = {
 							first_name: "DeAndre",
-							last_name: "Boston",
+							last_name: "Boson",
+						};
+						
+						let getName = (object) => {
+							console.log(`My name is ${object.first_name} ${object.last_name}!`)
 						}
-
-						const changeName = function(object, firstName, lastName){
-							object.first_name = firstName
-							object.last_name = lastName
-						}
-
-						changeName(person, "Jack", "Jack")
+						
+						getName(person)
 						
 					</code></pre>
 				</section>
-
-				<section data-auto-animate>
-					<h4 data-id="code-title">How to pass an object into a function</h4>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="11,13, 1-13">
-						let person = {
-							first_name: "DeAndre",
-							last_name: "Boston",
-						}
-
-						const changeName = function(object, firstName, lastName){
-							object.first_name = firstName
-							object.last_name = lastName
-						}
-
-						changeName(person, "Jack", "Jack")
-
-						console.log(person)
-					</code></pre>
 				</section>
 				
 	
