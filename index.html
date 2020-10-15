@@ -20,7 +20,7 @@
 				
 				<section data-auto-animate>
 					<h4 data-id="code-title">How to pass an object into a function</h4>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1|1,| 2-5">
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="">
 						let person = {
 							first_name: "DeAndre",
 							last_name: "Boston",
@@ -35,10 +35,9 @@
 						let person = {
 							first_name: "DeAndre",
 							last_name: "Boston",
-							age: 31
 						}
 
-						const changeName = function(object, firstName, lastName, age){
+						const changeName = function(object, firstName, lastName){
 							object.first_name = firstName
 							object.last_name = lastName
 							object.age = 6
