@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Group 4</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-auto-animate><h4>How to pass an object into a function</h4></section>
+				
+				<section data-auto-animate>
+					<h4 data-id="code-title">How to pass an object into a function</h4>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1|1,| 2-5">
+						let person = {
+							first_name: "DeAndre",
+							last_name: "Boston",
+							age: 31
+						};
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">How to pass an object into a function</h4>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+						let person = {
+							first_name: "DeAndre",
+							last_name: "Boston",
+							age: 31
+						}
+
+						const changeName = function(object, firstName, lastName, age){
+							object.first_name = firstName
+							object.last_name = lastName
+							object.age = 6
+						}
+						
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">How to pass an object into a function</h4>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+						let person = {
+							first_name: "DeAndre",
+							last_name: "Boston",
+							age: 31
+						}
+
+						const changeName = function(object, firstName, lastName, age){
+							object.first_name = firstName
+							object.last_name = lastName
+							object.age = 6
+						}
+
+						changeName(person, "Jack", "Jack")
+						
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">How to pass an object into a function</h4>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+						let person = {
+							first_name: "DeAndre",
+							last_name: "Boston",
+							age: 31
+						}
+
+						const changeName = function(object, firstName, lastName, age){
+							object.first_name = firstName
+							object.last_name = lastName
+							object.age = 6
+						}
+
+						changeName(person, "Jack", "Jack")
+						console.log(person)
+					</code></pre>
+				</section>
+				
+	
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
